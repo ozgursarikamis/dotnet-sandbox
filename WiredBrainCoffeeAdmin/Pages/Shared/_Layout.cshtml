@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Wired Brain Coffee Admin</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @* asp-append-version="true" *@
+	@* Cache this if it's not changed, otherwise request the file ' *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <environment names="Production">
-	    <link rel="stylesheet" href="~/css/WiredBrainCoffeeAdmin.styles.css" />
+	    <link rel="stylesheet" href="~/css/WiredBrainCoffeeAdmin.styles.css" asp-append-version="true"/>
     </environment>
 </head>
 <body>
