@@ -58,6 +58,11 @@
 			<div class="col-md-4">
 				<p>&copy; 2022 - WiredBrainCoffeeAdmin</p>
 				<img id="logo" src="~/images/wired-brain-coffee-logo.png"/>
+
+				@if (IsSectionDefined("RightFooter"))
+				{
+					@await RenderSectionAsync("RightFooter")
+				}
 			</div>
 			<div class="col-md-4">
 				<p>1234 Wired Brain Way</p>
