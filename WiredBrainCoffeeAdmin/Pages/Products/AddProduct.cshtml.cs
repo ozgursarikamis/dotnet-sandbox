@@ -10,7 +10,14 @@ namespace WiredBrainCoffeeAdmin.Pages.Products
 	    public Product NewProduct { get; set; }
 
         public void OnGet()
+		{
+
+		}
+
+        public void OnPost()
         {
-        }
-    }
+			// Save NewProduct to the database
+            var productName = NewProduct.Name;
+		}
+	}
 }
