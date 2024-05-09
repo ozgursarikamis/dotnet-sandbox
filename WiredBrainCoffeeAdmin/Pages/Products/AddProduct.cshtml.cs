@@ -16,8 +16,15 @@ namespace WiredBrainCoffeeAdmin.Pages.Products
 
         public void OnPost()
         {
-			// Save NewProduct to the database
-            var productName = NewProduct.Name;
+            if (ModelState.IsValid)
+            {
+	            // Save NewProduct to the database
+	            var productName = NewProduct.Name;
+			}
+            else
+            {
+                // Do something else.
+            }
 		}
 	}
 }
