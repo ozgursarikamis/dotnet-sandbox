@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WiredBrainCoffeeAdmin.Data
+namespace WiredBrainCoffeeAdmin.Data.Models
 {
     public class Product
     {
