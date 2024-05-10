@@ -27,7 +27,9 @@ namespace WiredBrainCoffeeAdmin.Data.Models
         [Required]
         public string Category { get; set; }
 
-        [NotMapped]
-        public IFormFile Upload { get; set; }
+        [NotMapped] // This attribute tells EF Core to ignore this property when creating the database
+		public IFormFile Upload { get; set; }
+
+		public string ImageFileName { get; set; }
     }
 }
