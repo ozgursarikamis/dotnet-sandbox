@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "razor-pages-fundamentals", "razor-pages-fundamentals", "{4A931E73-967F-497D-9E20-83E6F860CE93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffeeAdmin", "Web\razor-pages-fundamentals\WiredBrainCoffeeAdmin.csproj", "{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wav-Files", "Consoles\Wav-Files\Wav-Files.csproj", "{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +26,10 @@ Global
 		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +37,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4A931E73-967F-497D-9E20-83E6F860CE93} = {26C3F775-70E7-4FA6-B5B9-24C455A2A76C}
 		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9} = {4A931E73-967F-497D-9E20-83E6F860CE93}
+		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
