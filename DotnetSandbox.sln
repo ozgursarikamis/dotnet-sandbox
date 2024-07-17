@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.9.34728.123
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffeeAdmin", "WiredBrainCoffeeAdmin\WiredBrainCoffeeAdmin.csproj", "{9D380ECA-B245-4CAF-8B5D-52E78722B0DE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{26C3F775-70E7-4FA6-B5B9-24C455A2A76C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud", "Cloud", "{76A32CAE-E468-43C9-9662-F0CD5A8830DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{0738AFCF-5110-4F23-A0FE-08107F21B31A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{88E96C17-3A7E-4D84-B5EA-7930518776C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "razor-pages-fundamentals", "razor-pages-fundamentals", "{4A931E73-967F-497D-9E20-83E6F860CE93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffeeAdmin", "Web\razor-pages-fundamentals\WiredBrainCoffeeAdmin.csproj", "{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D380ECA-B245-4CAF-8B5D-52E78722B0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D380ECA-B245-4CAF-8B5D-52E78722B0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D380ECA-B245-4CAF-8B5D-52E78722B0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D380ECA-B245-4CAF-8B5D-52E78722B0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A931E73-967F-497D-9E20-83E6F860CE93} = {26C3F775-70E7-4FA6-B5B9-24C455A2A76C}
+		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9} = {4A931E73-967F-497D-9E20-83E6F860CE93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
