@@ -25,10 +25,9 @@ namespace WiredBrainCoffeeAdmin.Pages.Products
 			EditProduct = this.productRepo.GetById(Id);
 		}
 
-		public async Task<IActionResult> OnPost()
+		public async Task<IActionResult> OnPostEdit()
 		{
 			if(!ModelState.IsValid) return Page();
-			// if (EditProduct.Upload is null) return RedirectToPage("ViewAllProducts");
 
 			if (EditProduct.Upload is not null)
 			{
@@ -43,9 +42,15 @@ namespace WiredBrainCoffeeAdmin.Pages.Products
 
 			EditProduct.Created = DateTime.Now;
 			EditProduct.Id = Id;
-			this.productRepo.Add(EditProduct);
+            this.productRepo.Update(EditProduct);
 
-			return RedirectToPage("ViewAllProducts");
+            return RedirectToPage("ViewAllProducts");
 		}
+
+        public async Task<IActionResult> OnPostDelete2()
+        {
+            this.productRepo.Delete(Id);
+            return RedirectToPage("ViewAllProducts");
+        }
     }
 }

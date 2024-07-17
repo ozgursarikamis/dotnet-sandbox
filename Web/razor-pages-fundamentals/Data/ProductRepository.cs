@@ -22,7 +22,7 @@ namespace WiredBrainCoffeeAdmin.Data
         {
             var deleteItem = WiredContext.Products.FirstOrDefault(x => x.Id == id);
             WiredContext.Products.Remove(deleteItem);
-            WiredContext.SaveChanges();
+            // WiredContext.SaveChanges();
         }
 
         public List<Product> GetAll()
