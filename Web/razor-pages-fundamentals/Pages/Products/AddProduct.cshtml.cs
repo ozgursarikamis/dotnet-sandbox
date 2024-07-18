@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WiredBrainCoffeeAdmin.Data;
 using WiredBrainCoffeeAdmin.Data.Models;
+using WiredBrainCoffeeAdmin.ViewModels;
 
 namespace WiredBrainCoffeeAdmin.Pages.Products
 {
@@ -21,6 +22,12 @@ namespace WiredBrainCoffeeAdmin.Pages.Products
 		
 	    [BindProperty]
 	    public Product NewProduct { get; set; }
+
+	    public SomePartialViewModel SomePartialViewModel { get; set; } = new SomePartialViewModel
+	    {
+			ProductDescription = "PW description",
+			ProductName = "PW Product name"
+		};
 
         public void OnGet()
 		{

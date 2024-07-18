@@ -15,6 +15,15 @@ Category: @Model.NewProduct?.Category
 
 <div class="row">
 	<div class="col-md-6">
+		Partial View with model
+	</div>
+	<div class="col-md-6">
+		<partial name="NewProductPartialView" model="@Model.SomePartialViewModel" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
 		<form method="post" enctype="multipart/form-data">
 			<div asp-validation-summary="All"></div>
 			<div class="mb-3">
