@@ -37,7 +37,8 @@
 	
     <div class="row">
 	    <div class="col-md-12">
-		    @await Component.InvokeAsync("ProductList", new { ItemCount = 1 })
+		    @* @await Component.InvokeAsync("ProductList", new { ItemCount = 1 }) *@
+			<vc:product-list item-count="1"></vc:product-list>
 	    </div>
     </div>
 </div>
