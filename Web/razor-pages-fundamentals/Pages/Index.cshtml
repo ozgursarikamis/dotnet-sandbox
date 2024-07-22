@@ -36,9 +36,20 @@
     </div>
 	
     <div class="row">
-	    <div class="col-md-12">
+	    <div class="col-md-6">
 		    @* @await Component.InvokeAsync("ProductList", new { ItemCount = 1 }) *@
 			<vc:product-list item-count="1"></vc:product-list>
+		</div>
+	    <div class="col-md-6">
+		    <table class="table table-bordered table-striped">
+			    @foreach (var item in Model.OrderStats)
+			    {
+				    <tr>
+					    <td>@item.Key</td>
+						<td>@item.Value</td>
+				    </tr>
+			    }
+		    </table>
 	    </div>
     </div>
 </div>
