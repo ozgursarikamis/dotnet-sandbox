@@ -21,5 +21,11 @@ namespace WiredBrainCoffeeAdmin.Data
 		{
 			return await Client.GetFromJsonAsync<List<HelpTicket>>("/api/tickets");
 		}
+
+		public async Task<string> Create(HelpTicket ticket)
+		{
+			var response = await Client.PostAsJsonAsync("api/ticket", ticket);
+			return await response.Content.ReadAsStringAsync();
+		}
 	}
 }

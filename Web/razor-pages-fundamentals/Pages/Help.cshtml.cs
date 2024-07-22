@@ -10,6 +10,7 @@ namespace WiredBrainCoffeeAdmin.Pages
 		public ITicketService TicketService { get; }
 
 		[BindProperty] public HelpTicket NewTicket { get; set; }
+		public string PostResponseMessage { get; set; }
 
 		public List<HelpTicket> HelpTickets { get; set; }
 
@@ -26,7 +27,8 @@ namespace WiredBrainCoffeeAdmin.Pages
 
 		public async Task<IActionResult> OnPost()
 		{
-
+			PostResponseMessage = await TicketService.Create(NewTicket);
+			HelpTickets = await TicketService.GetAll();
 			return Page();
 		}
 	}

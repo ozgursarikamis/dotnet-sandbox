@@ -7,5 +7,7 @@ namespace WiredBrainCoffeeAdmin.Data
 		Task<List<HelpTicket>> GetAll();
 
 		Task<string> Add(HelpTicket ticket);
+
+		Task<string> Create(HelpTicket newTicket);
 	}
 }
