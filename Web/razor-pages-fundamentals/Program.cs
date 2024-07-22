@@ -13,6 +13,11 @@ builder.Services.AddDbContext<WiredContext>(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<ITicketService, TicketService>(options =>
+{
+	options.BaseAddress = new Uri("https://wiredbraincoffeeadmin.azurewebsites.net/api/orderStats");
+});
+// Create separate Typed HTTP client if you have to deal with multiple URLs
 
 var app = builder.Build();
 
