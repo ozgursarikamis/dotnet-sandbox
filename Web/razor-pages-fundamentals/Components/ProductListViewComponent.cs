@@ -12,9 +12,14 @@ namespace WiredBrainCoffeeAdmin.Components
 			this.ProductRepository = productRepository;
 		}
 
-		public IViewComponentResult Invoke()
+		public IViewComponentResult Invoke(int itemCount)
 		{
 			var items = ProductRepository.GetAll();
+			if (itemCount > 0)
+			{
+				return View(items.Take(itemCount).ToList());
+			}
+
 			return View(items);
 		}
 	}
