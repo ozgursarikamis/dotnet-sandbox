@@ -23,4 +23,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Shared\Components\ProductList\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Shared\Components\ProductList\Default.cshtml" />
+  </ItemGroup>
+
 </Project>
