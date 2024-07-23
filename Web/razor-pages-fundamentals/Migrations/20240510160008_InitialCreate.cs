@@ -32,8 +32,7 @@ namespace WiredBrainCoffeeAdmin.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Products");
+            migrationBuilder.DropTable(name: "Products");
         }
     }
 }

@@ -40,3 +40,11 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+return;
+
+async Task EnsureDbCreated(IServiceProvider services, ILogger logger)
+{
+	await using var db = services.CreateScope()
+		.ServiceProvider.GetRequiredService<WiredContext>();
+	await db.Database.MigrateAsync();
+}
