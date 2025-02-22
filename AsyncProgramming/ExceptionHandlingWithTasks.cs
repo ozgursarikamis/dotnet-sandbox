@@ -4,14 +4,15 @@ public static class ExceptionHandlingWithTasks
 {
     public static async Task Run()
     {
-        try
+        var task = PerformAsyncTask().ContinueWith(t =>
         {
-            await PerformAsyncTask();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Caught Exception: {ex.Message}");
-        }
+            if (t.IsFaulted)
+            {
+                Console.WriteLine($"Error: {t.Exception?.GetBaseException().Message}");
+            }
+        });
+
+        await task;
     }
 
     private static async Task PerformAsyncTask()
