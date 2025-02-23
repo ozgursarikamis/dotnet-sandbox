@@ -2,4 +2,5 @@
 
 // await ExceptionHandlingWithTasks.Run();
 // await UsingConfigureAwait.Run();
-await AsyncStreams.Run();
+// await AsyncStreams.Run();
+await TaskProgress.Run();
