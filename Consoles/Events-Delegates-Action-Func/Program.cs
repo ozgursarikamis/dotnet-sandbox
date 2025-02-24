@@ -7,4 +7,5 @@
 // ActionsAsParameter.Run();
 // HighOrderFunctions.Run();
 // AdvancedUseCases.Run();
-AdvancedUseCasesDependencyInjection.Run();
+// AdvancedUseCasesDependencyInjection.Run();
+FunctionalProgrammingConcepts.Run();
