@@ -5,4 +5,5 @@
 // Funcs.Run();
 // FuncWithLinq.Run();
 // ActionsAsParameter.Run();
-HighOrderFunctions.Run();
+// HighOrderFunctions.Run();
+AdvancedUseCases.Run();
