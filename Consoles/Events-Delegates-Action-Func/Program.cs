@@ -2,4 +2,5 @@
 
 // Delegates.Run();
 // Actions.Run();
-Funcs.Run();
+// Funcs.Run();
+FuncWithLinq.Run();
