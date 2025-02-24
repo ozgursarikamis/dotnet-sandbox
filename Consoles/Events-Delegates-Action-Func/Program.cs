@@ -10,4 +10,5 @@
 // AdvancedUseCasesDependencyInjection.Run();
 // FunctionalProgrammingConcepts.Run();
 // CustomDelegates.Run();
-MemoryUsage.Run();
+// MemoryUsage.Run();
+Events.Run();
