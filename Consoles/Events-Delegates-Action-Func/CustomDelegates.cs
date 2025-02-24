@@ -6,6 +6,10 @@ public static class CustomDelegates
     {
         CalculateTotal totalPrice = ComputeTotal;
         Console.WriteLine($"Total: {totalPrice(10.99m, 0.08m)}");
+        
+        // Using Func<T>:
+        Func<decimal, decimal, decimal> totalPriceFunc = (price, tax) => price + price * tax;
+        Console.WriteLine($"Total: {totalPriceFunc(10.99m, 0.08m)}");
     }
 
     private static decimal ComputeTotal(decimal price, decimal taxRate)
