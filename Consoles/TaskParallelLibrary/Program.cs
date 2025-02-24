@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using TaskParallelLibrary.Basics;
 
-Console.WriteLine("Hello, World!");
+TaskBasics.Run();
