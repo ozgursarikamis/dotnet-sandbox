@@ -8,7 +8,24 @@ public static class HighOrderFunctions
     public static void Run()
     {
         // MeasureExecutionTime(TaskToMeasure);
-        FuncAsParameter();
+        // FuncAsParameter();
+        ReturningAFunction();
+    }
+
+    private static void ReturningAFunction()
+    {
+        double distance = 150;
+        Console.WriteLine($"Travel Method: {GetTravelMethod(distance)()}");
+        return;
+
+        static Func<string> GetTravelMethod(double distance)
+        {
+            if (distance < 2)
+                return () => "Walking";
+            if (distance < 100)
+                return () => "Driving";
+            return () => "Flying";
+        }
     }
 
     private static void FuncAsParameter()
