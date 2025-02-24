@@ -8,4 +8,5 @@
 // HighOrderFunctions.Run();
 // AdvancedUseCases.Run();
 // AdvancedUseCasesDependencyInjection.Run();
-FunctionalProgrammingConcepts.Run();
+// FunctionalProgrammingConcepts.Run();
+CustomDelegates.Run();
