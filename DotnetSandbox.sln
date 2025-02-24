@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wav-Files", "Consoles\Wav-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming", "AsyncProgramming\AsyncProgramming.csproj", "{8C7577E8-E45F-4A3D-B974-A6127FD18FF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events-Delegates-Action-Func", "Consoles\Events-Delegates-Action-Func\Events-Delegates-Action-Func.csproj", "{37D18112-1861-4121-BA53-D82D07B20AC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{8C7577E8-E45F-4A3D-B974-A6127FD18FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7577E8-E45F-4A3D-B974-A6127FD18FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7577E8-E45F-4A3D-B974-A6127FD18FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D18112-1861-4121-BA53-D82D07B20AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D18112-1861-4121-BA53-D82D07B20AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D18112-1861-4121-BA53-D82D07B20AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D18112-1861-4121-BA53-D82D07B20AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{E6D98BC5-6154-4EBF-B059-4A7FE9AB49E9} = {4A931E73-967F-497D-9E20-83E6F860CE93}
 		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{8C7577E8-E45F-4A3D-B974-A6127FD18FF9} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
+		{37D18112-1861-4121-BA53-D82D07B20AC0} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
