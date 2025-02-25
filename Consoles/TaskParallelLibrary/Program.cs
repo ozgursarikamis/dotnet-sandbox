@@ -13,15 +13,5 @@ using TaskParallelLibrary.Multithreading;
 // await BroadcastBlockExample.Run();
 // await JoinBlockExample.Run();
 
-// var counter = new RequestCounter();
-var counter = new MonitorExample();
-
-// Simulate multiple requests from different threads:
-await Task.WhenAll(
-    Task.Run(() => { for (int i = 0; i < 1000; i++) { counter.IncrementCounter(); } }),
-    Task.Run(() => { for (int i = 0; i < 1000; i++) { counter.IncrementCounter(); } }),
-    Task.Run(() => { for (int i = 0; i < 1000; i++) { counter.IncrementCounter(); } })
-);
-
-Console.WriteLine($"Total requests: {counter.GetCount()}");
-Console.ReadKey();
+// MutexExample.AccessSharedResource();
+await ResourcePool.Run();
