@@ -6,4 +6,5 @@ using TaskParallelLibrary.ParallelLoops;
 // ParallelLoopExample.Run();
 // ThreadSafeCollections.Run();
 // await BufferBlockExample.Run();
-await TransformBlockExample.Run();
+// await TransformBlockExample.Run();
+await ActionBlockExample.Run();
