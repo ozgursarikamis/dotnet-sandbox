@@ -13,7 +13,8 @@ using TaskParallelLibrary.Multithreading;
 // await BroadcastBlockExample.Run();
 // await JoinBlockExample.Run();
 
-var counter = new RequestCounter();
+// var counter = new RequestCounter();
+var counter = new MonitorExample();
 
 // Simulate multiple requests from different threads:
 await Task.WhenAll(
