@@ -14,4 +14,5 @@ using TaskParallelLibrary.Multithreading;
 // await JoinBlockExample.Run();
 
 // MutexExample.AccessSharedResource();
-await ResourcePool.Run();
+// await ResourcePool.Run();
+await ReaderWriterLockSlimExample.Run();
