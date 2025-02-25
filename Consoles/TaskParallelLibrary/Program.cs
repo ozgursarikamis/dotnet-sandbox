@@ -1,3 +1,9 @@
-﻿using TaskParallelLibrary.Basics;
+﻿using TaskParallelLibrary.AdvancedTopics;
+using TaskParallelLibrary.Basics;
+using TaskParallelLibrary.ParallelLoops;
 
-TaskBasics.Run();
+// TaskBasics.Run();
+// ParallelLoopExample.Run();
+// ThreadSafeCollections.Run();
+// await BufferBlockExample.Run();
+await TransformBlockExample.Run();
