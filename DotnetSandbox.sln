@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming", "AsyncPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events-Delegates-Action-Func", "Consoles\Events-Delegates-Action-Func\Events-Delegates-Action-Func.csproj", "{37D18112-1861-4121-BA53-D82D07B20AC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees", "Consoles\ExpressionTrees\ExpressionTrees.csproj", "{D07021A8-8C36-4156-930A-11904B58A0D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{37D18112-1861-4121-BA53-D82D07B20AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37D18112-1861-4121-BA53-D82D07B20AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37D18112-1861-4121-BA53-D82D07B20AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07021A8-8C36-4156-930A-11904B58A0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07021A8-8C36-4156-930A-11904B58A0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07021A8-8C36-4156-930A-11904B58A0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07021A8-8C36-4156-930A-11904B58A0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{6ECDD92A-548F-4CC6-B0B9-2AA0AC6E2E4A} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{8C7577E8-E45F-4A3D-B974-A6127FD18FF9} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{37D18112-1861-4121-BA53-D82D07B20AC0} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
+		{D07021A8-8C36-4156-930A-11904B58A0D8} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
