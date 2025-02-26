@@ -19,6 +19,12 @@ public class AggregateExceptionExample
             {
                 Console.WriteLine($"Caught: {ex.GetType().Name} - {ex.Message}");
             }
+            
+            //or flatten the AggregateException:
+            foreach (var exception in aggEx.Flatten().InnerExceptions)
+            {
+                Console.WriteLine($"Exception: {exception.Message}");
+            }
         }
     }
 }
