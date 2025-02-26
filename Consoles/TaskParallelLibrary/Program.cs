@@ -15,4 +15,5 @@ using TaskParallelLibrary.Multithreading;
 
 // MutexExample.AccessSharedResource();
 // await ResourcePool.Run();
-await ReaderWriterLockSlimExample.Run();
+// await ReaderWriterLockSlimExample.Run();
+AggregateExceptionExample.Run();
