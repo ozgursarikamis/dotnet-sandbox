@@ -1,6 +1,5 @@
 @Host = http://localhost:5227
 
-GET {{Host}}/weatherforecast/
-Accept: application/json
+GET {{Host}}/api/employee/search?filters[Salary]=> 50000&filters[Country]== Germany&filters[Age]=>= 35
 
 ###
