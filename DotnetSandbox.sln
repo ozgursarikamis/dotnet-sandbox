@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees.DynamicSear
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", "Consoles\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyClass", "Consoles\LazyClass\LazyClass.csproj", "{E3D17B32-0C95-4C93-A1B3-2638D622817D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5EC307A8-AD2D-42C5-ADBD-73BCE822A319}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD4D679-B5D8-4860-98F9-C2B36BEE4EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAD4D679-B5D8-4860-98F9-C2B36BEE4EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{AAD4D679-B5D8-4860-98F9-C2B36BEE4EB2} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
+		{E3D17B32-0C95-4C93-A1B3-2638D622817D} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
