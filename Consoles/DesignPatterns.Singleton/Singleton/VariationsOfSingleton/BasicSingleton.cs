@@ -1,7 +1,7 @@
 namespace DesignPatterns.Singleton.Singleton;
 
 // 1️⃣ Basic (Non-Thread-Safe) Singleton ❌ (Not Recommended)
-public class BasicSingleton
+public sealed class BasicSingleton
 {
     private static BasicSingleton _instance;
     private BasicSingleton() {}

@@ -1,6 +1,6 @@
 namespace DesignPatterns.Singleton.Singleton.VariationsOfSingleton;
 
-public class ThreadSafeLockedSingleton
+public sealed class ThreadSafeLockedSingleton
 {
     private static ThreadSafeLockedSingleton _instance;
     private static readonly object _lock = new object();
