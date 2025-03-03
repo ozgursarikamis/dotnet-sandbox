@@ -4,8 +4,8 @@ public sealed class ThreadSafeLockedSingleton
 {
     private static ThreadSafeLockedSingleton _instance;
     private static readonly object _lock = new object();
-    
-    private ThreadSafeLockedSingleton() {}
+
+    private ThreadSafeLockedSingleton() { }
 
     public static ThreadSafeLockedSingleton Instance
     {
@@ -17,9 +17,8 @@ public sealed class ThreadSafeLockedSingleton
                 {
                     _instance = new ThreadSafeLockedSingleton();
                 }
-
-                return _instance;
             }
+            return _instance;
         }
     }
 }

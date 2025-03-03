@@ -5,21 +5,22 @@ public sealed class PerformantThreadSafeLockedSingleton
     private static PerformantThreadSafeLockedSingleton _instance;
     private static readonly object _lock = new object();
 
-    private static PerformantThreadSafeLockedSingleton Instance
+    private PerformantThreadSafeLockedSingleton() { }
+
+    public static PerformantThreadSafeLockedSingleton Instance
     {
         get
         {
-            if (_instance == null)
+            if (_instance == null) // First check (No locking if instance is already created)
             {
                 lock (_lock)
                 {
-                    if (_instance == null) // double-check!
+                    if (_instance == null) // Second check (Ensures only one thread creates an instance)
                     {
                         _instance = new PerformantThreadSafeLockedSingleton();
                     }
                 }
             }
-            
             return _instance;
         }
     }

@@ -4,9 +4,10 @@ namespace DesignPatterns.Singleton.Singleton;
 public sealed class BasicSingleton
 {
     private static BasicSingleton _instance;
-    private BasicSingleton() {}
 
-    public static BasicSingleton GetInstance
+    private BasicSingleton() { }
+
+    public static BasicSingleton Instance
     {
         get
         {
@@ -14,12 +15,10 @@ public sealed class BasicSingleton
             {
                 _instance = new BasicSingleton();
             }
-
             return _instance;
         }
     }
 }
-
 // Not thread-safe: If two threads access Instance simultaneously,
 // both could create a separate instance.
 
