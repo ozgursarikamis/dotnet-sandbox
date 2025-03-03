@@ -22,3 +22,5 @@ public class BasicSingleton
 
 // Not thread-safe: If two threads access Instance simultaneously,
 // both could create a separate instance.
+
+// Check `ThreadSafeLockedSingleton` for an improved version
