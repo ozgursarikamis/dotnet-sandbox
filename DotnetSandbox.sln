@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming", "Console
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees.DynamicSearch.API", "API\ExpressionTrees.DynamicSearch.API\ExpressionTrees.DynamicSearch.API.csproj", "{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", "Consoles\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj", "{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{5EC307A8-AD2D-42C5-ADBD-73BCE822A319} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{AAD4D679-B5D8-4860-98F9-C2B36BEE4EB2} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
+		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
