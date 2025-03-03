@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Singleton", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyClass", "Consoles\LazyClass\LazyClass.csproj", "{E3D17B32-0C95-4C93-A1B3-2638D622817D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "Consoles\CustomExceptions\CustomExceptions.csproj", "{4F1B0080-6F4A-42A2-B936-9A02C428EDA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3D17B32-0C95-4C93-A1B3-2638D622817D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1B0080-6F4A-42A2-B936-9A02C428EDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1B0080-6F4A-42A2-B936-9A02C428EDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1B0080-6F4A-42A2-B936-9A02C428EDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1B0080-6F4A-42A2-B936-9A02C428EDA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{2286FAE6-26B5-42E5-AC5F-531D3F8B89A2} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 		{3EACE75E-19D9-4849-85DC-2D97B0C4BE7D} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{E3D17B32-0C95-4C93-A1B3-2638D622817D} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
+		{4F1B0080-6F4A-42A2-B936-9A02C428EDA1} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
