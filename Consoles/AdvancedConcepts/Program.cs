@@ -9,4 +9,5 @@ using AdvancedConcepts.PatternMatching;
 // Tuples.Run();
 // TypeChecking.Run();
 // SwitchExpression.Run();
-PropertyMatching.Run();
+// PropertyMatching.Run();
+RelationalPatterns.Run();
