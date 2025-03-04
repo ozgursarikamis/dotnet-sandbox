@@ -4,7 +4,22 @@ public static class ReadingWritingData
 {
     public static void Run()
     {
-        WriteData();
+        // WriteData();
+        ReadData();
+    }
+
+    private static void ReadData()
+    {
+        // 📌 Use Case: Useful when processing line-by-line
+        // instead of loading everything into memory.
+        using (var reader = new StreamReader("stream_example.txt"))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                Console.WriteLine(line);
+            }
+        }
     }
 
     private static void WriteData()
