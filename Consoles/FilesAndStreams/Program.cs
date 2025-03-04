@@ -7,4 +7,5 @@ using FilesAndStreams.MonitoringFileSystemChanges;
 // DeleteDirectory.Run();
 // EnumeratingAllFiles.Run();
 
-BasicFileSystemWatcher.Run();
+// BasicFileSystemWatcher.Run();
+IgnoringDuplicateEvents.Run();
