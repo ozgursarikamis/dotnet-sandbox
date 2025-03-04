@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using AdvancedConcepts;
+using AdvancedConcepts.IndexesRangesIndices;
 using AdvancedConcepts.Keywords;
 using AdvancedConcepts.OperatorOverloading;
 using AdvancedConcepts.Tuples;
@@ -18,4 +19,5 @@ using AdvancedConcepts.PatternMatching;
 // FileKeyword.Run();
 // RequiredKeyword.Run();
 // Init.Run();
-NotNullWhenAttr.Run();
+// NotNullWhenAttr.Run();
+Indexers.Run();
