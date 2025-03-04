@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using AdvancedConcepts;
+using AdvancedConcepts.GarbageCollection;
 using AdvancedConcepts.IndexesRangesIndices;
 using AdvancedConcepts.Keywords;
 using AdvancedConcepts.OperatorOverloading;
@@ -22,4 +23,5 @@ using AdvancedConcepts.PatternMatching;
 // NotNullWhenAttr.Run();
 // Indexers.Run();
 // Ranges.Run();
-Spans.Run();
+// Spans.Run();
+IDisposableImplementation.Run();
