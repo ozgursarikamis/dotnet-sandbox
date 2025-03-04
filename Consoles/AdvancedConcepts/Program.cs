@@ -1,7 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using AdvancedConcepts;
 using AdvancedConcepts.OperatorOverloading;
 using AdvancedConcepts.Tuples;
+using AdvancedConcepts.PatternMatching;
 
 // BasicOperatorOverloading.Run();
-Tuples.Run();
+// Tuples.Run();
+TypeChecking.Run();
