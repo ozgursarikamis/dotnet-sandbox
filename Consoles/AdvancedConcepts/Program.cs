@@ -8,4 +8,5 @@ using AdvancedConcepts.PatternMatching;
 // BasicOperatorOverloading.Run();
 // Tuples.Run();
 // TypeChecking.Run();
-SwitchExpression.Run();
+// SwitchExpression.Run();
+PropertyMatching.Run();
