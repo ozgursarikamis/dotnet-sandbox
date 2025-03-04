@@ -21,4 +21,5 @@ using AdvancedConcepts.PatternMatching;
 // Init.Run();
 // NotNullWhenAttr.Run();
 // Indexers.Run();
-Ranges.Run();
+// Ranges.Run();
+Spans.Run();
