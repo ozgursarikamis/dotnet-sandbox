@@ -5,7 +5,14 @@ public static class Tuples
     public static void Run()
     {
         // CreateTuples();
-        NamedTuples();
+        // NamedTuples();
+        var tuples = ReturningTuples();
+        Console.WriteLine($"tuples: {tuples.Item1},{tuples.Item2},{tuples.Item3}");
+    }
+
+    private static (int, string, bool) ReturningTuples()
+    {
+        return (0, "Name", false);
     }
 
     private static void NamedTuples()
