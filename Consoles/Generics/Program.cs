@@ -1,3 +1,4 @@
 ﻿using Generics;
 
-GenericInterfaces.Run();
+// GenericInterfaces.Run();
+WorkingWithIEnumerable.Run();
