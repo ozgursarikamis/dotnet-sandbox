@@ -2,4 +2,5 @@
 
 // CopyingFile.Run();
 // MovingFile.Run();
-GetFileExtension.Run();
+// GetFileExtension.Run();
+DeleteDirectory.Run();
