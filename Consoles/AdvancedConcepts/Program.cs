@@ -12,4 +12,5 @@ using AdvancedConcepts.PatternMatching;
 // PropertyMatching.Run();
 // RelationalPatterns.Run();
 // LogicalPatterns.Run();
-ListPatterns.Run();
+// ListPatterns.Run();
+RecordTypes.Run();
