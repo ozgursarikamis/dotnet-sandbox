@@ -1,3 +1,4 @@
 ﻿using FilesAndStreams.ManagingFilesAndDirectories;
 
-CopyingFile.Run();
+// CopyingFile.Run();
+MovingFile.Run();
