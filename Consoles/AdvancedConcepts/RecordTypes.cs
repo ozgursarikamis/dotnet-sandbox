@@ -5,7 +5,17 @@ public class RecordTypes
     public static void Run()
     {
         // Definition();
-        WithKeyword();
+        // WithKeyword();
+        NestedRecordsWithWith();
+    }
+
+    private static void NestedRecordsWithWith()
+    {
+        var person1 = new Person("Alice", 30, new Address("New York", "USA"));
+        var person2 = person1 with { Address = person1.Address with { City = "Los Angeles" } };
+
+        Console.WriteLine(person1);
+        Console.WriteLine(person2);
     }
 
     private static void WithKeyword()
@@ -28,6 +38,9 @@ public class RecordTypes
         Console.WriteLine(record1 == record2); // True (Value-based equality)
     }
 }
+
+public record Address(string City, string Country);
+public record Person(string Name, int Age, Address Address);
 
 public record Student(string Name, int Age);
 
