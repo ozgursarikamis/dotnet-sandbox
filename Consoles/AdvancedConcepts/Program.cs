@@ -11,4 +11,5 @@ using AdvancedConcepts.PatternMatching;
 // SwitchExpression.Run();
 // PropertyMatching.Run();
 // RelationalPatterns.Run();
-LogicalPatterns.Run();
+// LogicalPatterns.Run();
+ListPatterns.Run();
