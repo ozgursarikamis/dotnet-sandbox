@@ -21,10 +21,21 @@ public static class BasicFileSystemWatcher
         // You can filter it to monitor only specific changes.
         watcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
         
+        // automatically processing created/changed file:
+        watcher.Created += OncCreatedOrChanged;
+        watcher.Changed += OncCreatedOrChanged;
+        
         // Enable watching
         watcher.EnableRaisingEvents = true;
 
         Console.WriteLine("Monitoring file system changes. Press [Enter] to exit.");
         Console.ReadLine();
+    }
+
+    private static void OncCreatedOrChanged(object sender, FileSystemEventArgs e)
+    {
+        if (!File.Exists(e.FullPath)) return;
+        var content = File.ReadAllText(e.FullPath);
+        Console.WriteLine($"File content:\n{content}");
     }
 }
