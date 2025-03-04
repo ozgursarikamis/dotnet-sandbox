@@ -15,6 +15,8 @@ public static class BasicFileSystemWatcher
         watcher.Deleted += (s, e) => Console.WriteLine("Deleted: " + e.FullPath);
         watcher.Renamed += (s, e) => Console.WriteLine($"Renamed: {e.OldName} to {e.FullPath}");
         
+        watcher.InternalBufferSize = 64 * 1024; // 64 KB Buffer size
+        
         // Enable watching
         watcher.EnableRaisingEvents = true;
 
