@@ -1,6 +1,7 @@
 ﻿using FilesAndStreams.ManagingFilesAndDirectories;
 using FilesAndStreams.MonitoringFileSystemChanges;
 using FilesAndStreams.ReadingWritingFiles;
+using FilesAndStreams.Streams;
 
 // CopyingFile.Run();
 // MovingFile.Run();
@@ -12,4 +13,5 @@ using FilesAndStreams.ReadingWritingFiles;
 // IgnoringDuplicateEvents.Run();
 // StringArraysToText.Run();
 
-CopyingABinaryFile.Run();
+// CopyingABinaryFile.Run();
+ReadingWritingData.Run();
