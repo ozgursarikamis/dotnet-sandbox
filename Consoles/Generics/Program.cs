@@ -2,4 +2,5 @@
 
 // GenericInterfaces.Run();
 // WorkingWithIEnumerable.Run();
-GenericConstrains.Run();
+// GenericConstrains.Run();
+Covariance.Run();
