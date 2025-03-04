@@ -10,4 +10,6 @@ using FilesAndStreams.ReadingWritingFiles;
 
 // BasicFileSystemWatcher.Run();
 // IgnoringDuplicateEvents.Run();
-StringArraysToText.Run();
+// StringArraysToText.Run();
+
+CopyingABinaryFile.Run();
