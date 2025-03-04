@@ -1,5 +1,6 @@
 ﻿using FilesAndStreams.ManagingFilesAndDirectories;
 using FilesAndStreams.MonitoringFileSystemChanges;
+using FilesAndStreams.ReadingWritingFiles;
 
 // CopyingFile.Run();
 // MovingFile.Run();
@@ -8,4 +9,5 @@ using FilesAndStreams.MonitoringFileSystemChanges;
 // EnumeratingAllFiles.Run();
 
 // BasicFileSystemWatcher.Run();
-IgnoringDuplicateEvents.Run();
+// IgnoringDuplicateEvents.Run();
+StringArraysToText.Run();
