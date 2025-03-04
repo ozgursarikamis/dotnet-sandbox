@@ -1,4 +1,5 @@
 ﻿using Generics;
 
 // GenericInterfaces.Run();
-WorkingWithIEnumerable.Run();
+// WorkingWithIEnumerable.Run();
+GenericConstrains.Run();
