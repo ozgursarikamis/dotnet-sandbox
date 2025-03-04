@@ -4,7 +4,17 @@ public class RecordTypes
 {
     public static void Run()
     {
-        Definition();
+        // Definition();
+        WithKeyword();
+    }
+
+    private static void WithKeyword()
+    {
+        var student1 = new Student("Alice", 30);
+        var student2 = student1 with { Age = 31 };
+
+        Console.WriteLine(student1);
+        Console.WriteLine(student2);
     }
 
     private static void Definition()
@@ -18,6 +28,8 @@ public class RecordTypes
         Console.WriteLine(record1 == record2); // True (Value-based equality)
     }
 }
+
+public record Student(string Name, int Age);
 
 public class PersonClass
 {
