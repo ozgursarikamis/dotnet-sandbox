@@ -16,4 +16,5 @@ using FilesAndStreams.Streams;
 // CopyingABinaryFile.Run();
 // ReadingWritingData.Run();
 // SelectiveProcessPartOfStream.Run();
-HandlingBinaryData.Run();
+// HandlingBinaryData.Run();
+RandomFileAccess.Run();
