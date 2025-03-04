@@ -20,4 +20,5 @@ using AdvancedConcepts.PatternMatching;
 // RequiredKeyword.Run();
 // Init.Run();
 // NotNullWhenAttr.Run();
-Indexers.Run();
+// Indexers.Run();
+Ranges.Run();
