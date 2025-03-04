@@ -14,4 +14,6 @@ using FilesAndStreams.Streams;
 // StringArraysToText.Run();
 
 // CopyingABinaryFile.Run();
-ReadingWritingData.Run();
+// ReadingWritingData.Run();
+// SelectiveProcessPartOfStream.Run();
+HandlingBinaryData.Run();
