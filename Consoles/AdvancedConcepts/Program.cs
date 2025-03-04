@@ -7,4 +7,5 @@ using AdvancedConcepts.PatternMatching;
 
 // BasicOperatorOverloading.Run();
 // Tuples.Run();
-TypeChecking.Run();
+// TypeChecking.Run();
+SwitchExpression.Run();
