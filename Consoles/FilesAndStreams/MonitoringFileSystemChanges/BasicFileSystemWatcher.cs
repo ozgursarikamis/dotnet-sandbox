@@ -17,6 +17,10 @@ public static class BasicFileSystemWatcher
         
         watcher.InternalBufferSize = 64 * 1024; // 64 KB Buffer size
         
+        // By default, FileSystemWatcher watches all file attributes.
+        // You can filter it to monitor only specific changes.
+        watcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
+        
         // Enable watching
         watcher.EnableRaisingEvents = true;
 
