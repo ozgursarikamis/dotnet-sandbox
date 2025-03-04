@@ -17,4 +17,5 @@ using AdvancedConcepts.PatternMatching;
 // RecordTypes.Run();
 // FileKeyword.Run();
 // RequiredKeyword.Run();
-Init.Run();
+// Init.Run();
+NotNullWhenAttr.Run();
