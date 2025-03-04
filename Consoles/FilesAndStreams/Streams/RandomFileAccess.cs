@@ -4,7 +4,17 @@ public static class RandomFileAccess
 {
     public static void Run()
     {
-        WritingAndSeeking();
+        // WritingAndSeeking();
+        ReadingFromASpecificPosition();
+    }
+
+    private static void ReadingFromASpecificPosition()
+    {
+        using (var fs = new FileStream("random_access.dat", FileMode.Open))
+        { 
+            fs.Seek(5, SeekOrigin.Begin);
+            Console.WriteLine("Character at position 5: " + (char)fs.ReadByte());
+        }
     }
 
     private static void WritingAndSeeking()
