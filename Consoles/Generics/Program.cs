@@ -1,0 +1,3 @@
+﻿using Generics;
+
+GenericInterfaces.Run();
