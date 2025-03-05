@@ -8,4 +8,6 @@
 // CovarianceFoodProvider.Run();
 // GenericClasses.Run();
 // GenericsFluent.Run();
-SwapUtility.Run();
+// SwapUtility.Run();
+// GenericEvents.Run();
+GenericEvents.Run();
