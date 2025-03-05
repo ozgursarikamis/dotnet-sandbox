@@ -10,4 +10,5 @@
 // GenericsFluent.Run();
 // SwapUtility.Run();
 // GenericEvents.Run();
-GenericEvents.Run();
+// GenericEvents.Run();
+Predicates.Run();
