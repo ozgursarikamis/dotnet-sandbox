@@ -5,4 +5,5 @@
 // GenericConstrains.Run();
 // Covariance.Run();
 // Contravariance.Run();
-CovarianceFoodProvider.Run();
+// CovarianceFoodProvider.Run();
+GenericClasses.Run();
