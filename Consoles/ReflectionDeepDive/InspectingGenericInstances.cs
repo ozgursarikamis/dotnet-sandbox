@@ -1,10 +1,25 @@
+using System.Reflection;
+
 namespace ReflectionDeepDive;
 
 public static class InspectingGenericInstances
 {
     public static void Run()
     {
-        InspectingGenericClasses();
+        // InspectingGenericClasses();
+        InvokingGenericMethods();
+    }
+
+    private static void InvokingGenericMethods()
+    {
+        Type type = typeof(Utility);
+        MethodInfo? method = type.GetMethod("Print");
+        
+        // Make the method generic for type string
+        MethodInfo genericMetgod = method.MakeGenericMethod(typeof(string));
+
+        object? instance = Activator.CreateInstance(type);
+        genericMetgod.Invoke(instance, new[] { "Hello Reflection! " });
     }
 
     private static void InspectingGenericClasses()
@@ -24,4 +39,12 @@ public static class InspectingGenericInstances
 internal class DataStore<T>
 {
     public T Data { get; set; }
+}
+
+internal class Utility
+{
+    public void Print<T>(T item)
+    {
+        Console.WriteLine($"📢 Value: {item}, Type: {typeof(T)}");
+    }
 }
