@@ -10,4 +10,5 @@ using ReflectionDeepDive.ManipulatingObjects;
 // GettingAndSettingPropertiesAndFields.Run();
 // ModifyingPrivateFields.Run();
 // NetworkMonitoringApp.Run();
-InspectingGenericInstances.Run();
+// InspectingGenericInstances.Run();
+BuildAnIocContainer.Run();
