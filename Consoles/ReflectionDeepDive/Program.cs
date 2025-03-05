@@ -7,4 +7,5 @@ using ReflectionDeepDive.ManipulatingObjects;
 // InvokingConstructorByName.Run();
 // WorkingWithObjectThroughInterfaces.Run();
 // WorkingWithAnObjectThroughDynamics.Run();
-GettingAndSettingPropertiesAndFields.Run();
+// GettingAndSettingPropertiesAndFields.Run();
+ModifyingPrivateFields.Run();
