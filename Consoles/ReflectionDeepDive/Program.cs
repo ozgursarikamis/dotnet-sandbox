@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using ReflectionDeepDive;
+using ReflectionDeepDive.ManipulatingObjects;
 
-InspectingMetaData.Run();
+// InspectingMetaData.Run();
+InvokingConstructorByName.Run();
