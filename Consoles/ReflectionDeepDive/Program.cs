@@ -8,4 +8,5 @@ using ReflectionDeepDive.ManipulatingObjects;
 // WorkingWithObjectThroughInterfaces.Run();
 // WorkingWithAnObjectThroughDynamics.Run();
 // GettingAndSettingPropertiesAndFields.Run();
-ModifyingPrivateFields.Run();
+// ModifyingPrivateFields.Run();
+NetworkMonitoringApp.Run();
