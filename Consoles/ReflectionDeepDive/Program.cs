@@ -5,4 +5,5 @@ using ReflectionDeepDive.ManipulatingObjects;
 
 // InspectingMetaData.Run();
 // InvokingConstructorByName.Run();
-WorkingWithObjectThroughInterfaces.Run();
+// WorkingWithObjectThroughInterfaces.Run();
+WorkingWithAnObjectThroughDynamics.Run();
