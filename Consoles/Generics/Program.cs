@@ -4,4 +4,5 @@
 // WorkingWithIEnumerable.Run();
 // GenericConstrains.Run();
 // Covariance.Run();
-Contravariance.Run();
+// Contravariance.Run();
+CovarianceFoodProvider.Run();
