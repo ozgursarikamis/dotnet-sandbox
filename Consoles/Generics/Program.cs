@@ -6,4 +6,5 @@
 // Covariance.Run();
 // Contravariance.Run();
 // CovarianceFoodProvider.Run();
-GenericClasses.Run();
+// GenericClasses.Run();
+GenericsFluent.Run();
