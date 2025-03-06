@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Consoles\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDeepDive", "Consoles\ReflectionDeepDive\ReflectionDeepDive.csproj", "{BFEECC35-3C90-4118-8748-293458F3DC48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS", "API\CQRS\CQRS.csproj", "{B76ED286-BFBB-45D3-8158-7526936AFCFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{BFEECC35-3C90-4118-8748-293458F3DC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEECC35-3C90-4118-8748-293458F3DC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEECC35-3C90-4118-8748-293458F3DC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76ED286-BFBB-45D3-8158-7526936AFCFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76ED286-BFBB-45D3-8158-7526936AFCFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76ED286-BFBB-45D3-8158-7526936AFCFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76ED286-BFBB-45D3-8158-7526936AFCFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{5073C625-3EC7-4CFF-A604-87745ABB294A} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{BF8ABFC0-CE8F-46F8-B75C-1E930D268EFB} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
 		{BFEECC35-3C90-4118-8748-293458F3DC48} = {0738AFCF-5110-4F23-A0FE-08107F21B31A}
+		{B76ED286-BFBB-45D3-8158-7526936AFCFC} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
