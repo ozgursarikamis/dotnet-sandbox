@@ -1,0 +1,6 @@
+@CQRSKafkaAPI_HostAddress = http://localhost:5159
+
+GET {{CQRSKafkaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
