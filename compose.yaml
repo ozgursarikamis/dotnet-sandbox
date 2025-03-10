@@ -1,0 +1,6 @@
+﻿services:
+  cqrs.kafka.api:
+    image: cqrs.kafka.api
+    build:
+      context: .
+      dockerfile: API/CQRS.Kafka.API/Dockerfile
