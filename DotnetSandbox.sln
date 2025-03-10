@@ -47,6 +47,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Saga", "API\CQRS.Saga\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Kafka.API", "API\CQRS.Kafka.API\CQRS.Kafka.API.csproj", "{29A0752E-985A-4CB1-91C4-B862CAAD756B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDA1ABD1-B833-4430-9CC4-BEFBCADD7CBD}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Kafka.API.Consumer", "API\CQRS.Kafka.API.Consumer\CQRS.Kafka.API.Consumer.csproj", "{E839BF6F-19F3-49DD-A691-22D6C293B1A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +124,10 @@ Global
 		{29A0752E-985A-4CB1-91C4-B862CAAD756B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A0752E-985A-4CB1-91C4-B862CAAD756B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29A0752E-985A-4CB1-91C4-B862CAAD756B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E839BF6F-19F3-49DD-A691-22D6C293B1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E839BF6F-19F3-49DD-A691-22D6C293B1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E839BF6F-19F3-49DD-A691-22D6C293B1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E839BF6F-19F3-49DD-A691-22D6C293B1A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +151,7 @@ Global
 		{B76ED286-BFBB-45D3-8158-7526936AFCFC} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 		{1ECFA368-061F-4649-A41E-00C4FDF58B0C} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 		{29A0752E-985A-4CB1-91C4-B862CAAD756B} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
+		{E839BF6F-19F3-49DD-A691-22D6C293B1A0} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}
