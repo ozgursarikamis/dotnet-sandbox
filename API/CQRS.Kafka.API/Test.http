@@ -1,0 +1,28 @@
+### GET request to example server
+GET http://localhost:5000/api/bank
+
+###
+# curl -X POST http://localhost:5000/api/bank/deposit -H "Content-Type: application/json" -d '{
+#  "accountId": "550e8400-e29b-41d4-a716-446655440000",
+#  "amount": 1000
+#}'
+POST http://localhost:2643/api/bank/deposit
+Content-Type: application/json
+
+{
+  "accountId": "550e8400-e29b-41d4-a716-446655440000",
+  "amount": 1002
+}
+
+###
+POST http://localhost:2643/api/bank/withdraw
+Content-Type: application/json
+
+{
+  "accountId": "550e8400-e29b-41d4-a716-446655440000",
+  "amount": 9999
+}
+
+###
+
+GET localhost:2643/api/Some
