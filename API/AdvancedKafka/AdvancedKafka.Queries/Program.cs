@@ -1,34 +1,19 @@
-using AdvancedKafka.Entities;
 using AdvancedKafka.Shared.Config;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load Configurations
-var kafkaSettings = builder.Configuration.GetSection("KafkaSettings").Get<KafkaSettings>();
-var dbSettings = builder.Configuration.GetSection("DatabaseSettings").Get<DatabaseSettings>();
+// Add services
+builder.Services.AddDatabaseContext(builder.Configuration);
+builder.Services.AddKafkaSettings(builder.Configuration);
 
-// Register Configurations
-builder.Services.AddSingleton(kafkaSettings);
-builder.Services.AddSingleton(dbSettings);
-
-// Register DbContext
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(dbSettings.ConnectionString));
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+// Build app
 var app = builder.Build();
-DbInitializer.EnsureDatabaseCreated(app.Services);
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Initialize app (Ensures DB creation and applies migrations)
+AppInitializer.InitializeApp(app);
 
-app.UseAuthorization();
+// Map endpoints or controllers
 app.MapControllers();
+
+// Run the app
 app.Run();
