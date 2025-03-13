@@ -57,6 +57,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Saga", "API\CQRS\CQRS.Saga\CQRS.Saga.csproj", "{D585CCEB-EDF9-4A88-90B2-C67C69B0D177}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdvancedKafka", "AdvancedKafka", "{417A94C9-56EC-47F8-92E8-4FA3527F3D75}"
+	ProjectSection(SolutionItems) = preProject
+		API\AdvancedKafka\Test.http = API\AdvancedKafka\Test.http
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedKafka.Shared.Config", "API\AdvancedKafka\AdvancedKafka.Shared.Config\AdvancedKafka.Shared.Config.csproj", "{70A98EB1-A263-4C69-A827-835FD0253FD4}"
 EndProject

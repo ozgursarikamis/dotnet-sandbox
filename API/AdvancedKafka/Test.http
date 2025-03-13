@@ -1,0 +1,13 @@
+GET localhost:5000/api/test/
+
+###
+POST http://localhost:5000/api/test/send?topic=orders
+Content-Type: application/json
+
+"Order #12341121"
+
+###
+
+GET http://localhost:5000/api/kafkaconsumer/consume?topic=customers
+
+###
