@@ -10,6 +10,7 @@
     <ItemGroup>
       <ProjectReference Include="..\AdvancedKafka.Entities\AdvancedKafka.Entities.csproj" />
       <ProjectReference Include="..\AdvancedKafka.Shared.Config\AdvancedKafka.Shared.Config.csproj" />
+      <ProjectReference Include="..\AdvancedKafka.SharedKernel\AdvancedKafka.SharedKernel.csproj" />
     </ItemGroup>
 
     <ItemGroup>
