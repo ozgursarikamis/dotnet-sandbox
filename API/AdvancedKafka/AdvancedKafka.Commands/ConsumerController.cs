@@ -15,4 +15,11 @@ public class ConsumerController(KafkaConsumer kafkaConsumer) : ControllerBase
         Task.Run(() => kafkaConsumer.ConsumeMessage(topic, CancellationToken.None));
         return Ok($"Started consuming messages from {topic}.");
     }
+    
+    [HttpPost("{topic}")]
+    public IActionResult ConsumeMessagesWithTopic(string topic, [FromQuery] string groupId = "group1", [FromQuery] short parallelism = 2)
+    {
+        Task.Run(() => kafkaConsumer.ConsumeMessage(topic, CancellationToken.None, parallelism));
+        return Ok($"Started consuming '{topic}' with group '{groupId}' and parallelism '{parallelism}'");
+    }
 }

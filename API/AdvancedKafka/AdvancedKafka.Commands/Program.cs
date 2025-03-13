@@ -7,7 +7,8 @@ var builderConfiguration = builder.Configuration;
 builder.Services.AddDatabaseContext(builderConfiguration);
 builder.Services.AddKafkaSettings(builderConfiguration);
 builder.Services.AddKafkaProducer(builderConfiguration);
-builder.Services.AddKafkaConsumer(builderConfiguration);
+builder.Services.AddKafkaConsumer(builderConfiguration, "group1");
+builder.Services.AddKafkaConsumer(builderConfiguration, "group2");
 
 // Add MVC services for controllers
 builder.Services.AddControllers();

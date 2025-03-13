@@ -44,7 +44,11 @@ public static class ServiceExtensions
         return services;
     }
 
-    public static IServiceCollection AddKafkaConsumer(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddKafkaConsumer(
+        this IServiceCollection services, 
+        IConfiguration configuration,
+        string groupId = "advanced-kafka-group"
+        )
     {
         var kafkaSettings = configuration.GetSection("KafkaSettings").Get<KafkaSettings>();
         services.AddSingleton<IConsumer<Ignore, string>>(_ =>
@@ -52,8 +56,10 @@ public static class ServiceExtensions
             var config = new ConsumerConfig
             {
                 BootstrapServers = kafkaSettings?.BootstrapServers,
-                GroupId = "advanced-kafka-group",
+                GroupId = groupId,
                 AutoOffsetReset = AutoOffsetReset.Earliest,
+                EnableAutoCommit = false,
+                EnablePartitionEof = true
             };
 
             return new ConsumerBuilder<Ignore, string>(config).Build();

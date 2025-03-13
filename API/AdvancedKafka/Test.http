@@ -11,3 +11,11 @@ Content-Type: application/json
 GET http://localhost:5000/api/kafkaconsumer/consume?topic=customers
 
 ###
+#curl -X POST "http://localhost:5001/api/kafka/consume/orders?groupId=group1&parallelism=2"
+#curl -X POST "http://localhost:5001/api/kafka/consume/orders?groupId=group2&parallelism=2"
+POST http://localhost:5000/api/consumer/orders?groupId=group2&parallelism=2
+###
+POST http://localhost:5000/api/consumer/orders?groupId=group1&parallelism=2
+
+###
+
