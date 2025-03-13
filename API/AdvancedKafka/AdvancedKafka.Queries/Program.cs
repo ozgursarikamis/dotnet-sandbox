@@ -21,6 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+DbInitializer.EnsureDatabaseCreated(app.Services);
 
 if (app.Environment.IsDevelopment())
 {
