@@ -3,8 +3,11 @@ using AdvancedKafka.Shared.Config;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
-builder.Services.AddDatabaseContext(builder.Configuration);
-builder.Services.AddKafkaSettings(builder.Configuration);
+var builderConfiguration = builder.Configuration;
+builder.Services.AddDatabaseContext(builderConfiguration);
+builder.Services.AddKafkaSettings(builderConfiguration);
+builder.Services.AddKafkaProducer(builderConfiguration);
+builder.Services.AddKafkaConsumer(builderConfiguration);
 
 // Add MVC services for controllers
 builder.Services.AddControllers();
