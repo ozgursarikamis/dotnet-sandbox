@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "ProtobufMessages.ConsoleApp";
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+  repeated string Hobbies = 4;
+  Address address = 5;
+
+//  Use tags 1–15 for frequently used fields (they’re encoded with 1 byte)
+//  Use tags 16+ for less common fields
+}
+
+message Address {
+  string AddressLine1 = 1;
+  string AddressLine2 = 2;
+}
