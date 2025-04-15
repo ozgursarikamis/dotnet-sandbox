@@ -42,6 +42,40 @@ public class KafkaConsumer(IConsumer<Ignore, string> consumer, ILogger<KafkaCons
         Task.WaitAll(tasks, token);
     }
 
+    public void ConsumeFromPartition(string topic, int partitionId, CancellationToken token, int parallelism = 2)
+    {
+        var topicPartition = new TopicPartition(topic, new Partition(partitionId));
+        // Assign consumer to a specific partition:
+        consumer.Assign(topicPartition);
+
+        Console.WriteLine($"Consuming from partition {partitionId} from topic {topic}, Parallelism {parallelism}");
+
+        var tasks = Enumerable.Range(0, parallelism)
+            .Select(_ => Task.Run(() =>
+            {
+                while (true)
+                {
+                    try
+                    {
+                        var consumeResult = consumer.Consume(token);
+                        var message = consumeResult.Message.Value;
+
+                        Console.WriteLine($"Received message: {message}");
+                        ProcessMessage(message);
+
+                        // Manually commit after processing:
+                        consumer.Commit(consumeResult);
+                    }
+                    catch (ConsumeException consumeException)
+                    {
+                        Console.WriteLine($"Kafka consume exception: {consumeException.Message}");
+                    }
+                }
+            })).ToArray();
+        
+        Task.WaitAll(tasks, token);
+    }
+
     private static void ProcessMessage(string message)
     {
         Console.WriteLine($"Processing message: {message}");

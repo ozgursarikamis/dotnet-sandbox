@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedKafka.Commands", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedKafka.Queries", "API\AdvancedKafka\AdvancedKafka.Queries\AdvancedKafka.Queries.csproj", "{52893252-EAC7-448B-9BBD-CB5BA8F7B73D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtobuffMessages", "ProtobuffMessages\ProtobuffMessages.csproj", "{F6917B85-CC59-43C4-BA98-012C5F3F45CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{52893252-EAC7-448B-9BBD-CB5BA8F7B73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52893252-EAC7-448B-9BBD-CB5BA8F7B73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52893252-EAC7-448B-9BBD-CB5BA8F7B73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6917B85-CC59-43C4-BA98-012C5F3F45CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6917B85-CC59-43C4-BA98-012C5F3F45CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6917B85-CC59-43C4-BA98-012C5F3F45CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6917B85-CC59-43C4-BA98-012C5F3F45CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,6 +202,7 @@ Global
 		{2C0EA030-ACCB-46AD-8142-0E8118CDAEA6} = {417A94C9-56EC-47F8-92E8-4FA3527F3D75}
 		{D8AAD8FD-FEE3-4798-95B1-E52F0ADDE7F8} = {417A94C9-56EC-47F8-92E8-4FA3527F3D75}
 		{52893252-EAC7-448B-9BBD-CB5BA8F7B73D} = {417A94C9-56EC-47F8-92E8-4FA3527F3D75}
+		{F6917B85-CC59-43C4-BA98-012C5F3F45CA} = {88E96C17-3A7E-4D84-B5EA-7930518776C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A4F7D7-897A-45D5-97FB-3DFD14611CDE}

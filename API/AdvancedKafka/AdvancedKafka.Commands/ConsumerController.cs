@@ -22,4 +22,11 @@ public class ConsumerController(KafkaConsumer kafkaConsumer) : ControllerBase
         Task.Run(() => kafkaConsumer.ConsumeMessage(topic, CancellationToken.None, parallelism));
         return Ok($"Started consuming '{topic}' with group '{groupId}' and parallelism '{parallelism}'");
     }
+
+    [HttpPost("{topic}/partition/{partition}")]
+    public IActionResult ConsumeMessagesWithTopicPartition(string topic, int partition, [FromQuery] int parallelism = 2)
+    {
+        Task.Run(() => kafkaConsumer.ConsumeFromPartition(topic, partition, CancellationToken.None, 2));
+        return Ok($"Started consuming from '{topic}' | Partition '{partition}' | Parallelism '{parallelism}'");
+    }
 }
